@@ -1,0 +1,54 @@
+/*===== HOME =====*/
+.home {
+    background-color: #ffff;
+    overflow: hidden;
+}
+  
+.home__container {
+    height: calc(100vh - var(--header-height));
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 1.5rem;
+}
+  
+.home__img {
+    position: relative;
+    padding-top: 1.5rem;
+    justify-self: center;
+    width: 302px;
+    height: 233px;
+}
+  
+.svg__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.home__data{
+    color: var(--white-color);
+    margin-top: 9rem;
+}
+  
+.home__title{
+    font-size: var(--big-font-size);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--first-color-dark);
+}
+  
+.home__description{
+    margin-bottom: 2rem;
+    color: var(--first-color-dark);
+}
+  
+.home__button{
+    display: inline-block;
+    background-color: var(--first-color-dark);
+    color: var(--white-color);
+    padding: 1.125rem 2rem;
+    border-radius: .5rem;
+}
+  
+.home__button:hover{
+    background-color: var(--first-color-darken);
+}
