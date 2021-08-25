@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as FinDataLogo } from '../img/undraw_financial_data_es63.svg';
+import financeData from '../img/undraw_financial_data_es63.png';
 import './Landing.css';
 
 function Landing() {
@@ -7,7 +7,7 @@ function Landing() {
         <section className="home">
             <div className="home__container bd-grid">
                 <div className="home__img">
-                    <FinDataLogo className="svg__img" viewBox="0 0 1900 300"/>
+                    <img src={financeData} alt="data log" />
                 </div>
 
                 <div className="home__data">
