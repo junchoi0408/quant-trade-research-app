@@ -55,7 +55,7 @@
     }
 
     .home__container {
-      height: 100vh;
+      height: 80vh;
       grid-template-columns: repeat(2, max-content);
       grid-template-rows:  1fr;
       row-gap: 0;
@@ -87,6 +87,7 @@
     .home__container {
       justify-content: initial;
       column-gap: 4.5rem;
+      height: 90vh;
     }
   
     .home__img {
