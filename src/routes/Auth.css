@@ -1,0 +1,177 @@
+.auth__container {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.login__container {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__auth__container {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    font-size: 15px;
+}
+
+.social__button {
+    padding: 10px 10px;
+    min-height: 40px;
+    background-color: #ffff;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-width: thin;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 375px;
+}
+
+.form__container span, .form__container .nav__logo {
+    align-self: center;
+}
+
+.nav__logo__auth {
+    margin-bottom: 1em;
+}
+
+.login__logo__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.login__logo__container span, .login__logo__container .nav__logo__auth {
+    font-size: 19px;
+}
+
+.submit__input {
+    margin: 1em 0;
+    padding: 1em;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(49, 49, 49);
+    color: #ffff;
+    cursor: pointer;
+}
+
+.submit__input[disabled]{
+    background:rgb(235, 235, 235);
+    color: #ffff;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 375px;
+    background-color: rgb(235, 235, 235);
+    color:rgb(235, 235, 235);
+}
+
+.divider span {
+    padding: 0 1em;
+}
+
+button span {
+    font-weight: bold;
+    align-self: center;
+    flex-grow: 4;
+}
+
+.security {
+    width: min(80%, 300px);
+    color: #767676;
+    font-size: 12px;
+    text-align: center;
+}
+
+.security a:visited {
+    color: inherit;
+}
+
+.security a {
+    text-decoration: underline;
+}
+
+.toggle__sign {
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+    align-self: flex-start;
+}
+
+.toggle__sign__p {
+    text-decoration: underline;
+    color: #0000EE;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 774px) {
+    .login__container {
+        flex-direction: row;
+        width: 774px;
+        flex-wrap: wrap;
+    }
+
+    .divider {
+        flex-direction: column;
+        align-items: center;
+        width: 121.8px;
+        height: 187px;
+    }
+
+    .form__container {
+        width: 315px;
+        height: 187px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social__auth__container {
+        width: 326.59px;
+        height: 187px;
+        justify-content: stretch;
+    }
+
+    .social__button {
+        height: 55px;
+    }
+
+    .divider hr {
+        height: 68px;
+        border: none;
+        width: 1px;
+    }
+
+    .toggle__sign {
+        margin-top: 2em;
+        
+    }
+
+    .security {
+        margin: 0;
+    }
+}

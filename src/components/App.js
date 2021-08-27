@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Nav from './Nav';
 import AppRouter from './Router';
 import { authService }from '../firebase';
 
@@ -24,18 +23,6 @@ function App() {
       {init ? <AppRouter isLoggedIn={isLoggedIn}/> : "Initializing"}
       <footer className="nav__logo bd-grid">&copy; QTrade {new Date().getFullYear()}</footer>
     </>
-    
-    
-    // <div className="App">
-    //   <header class="l-header">
-    //     <Nav />
-    //   </header>
-      
-    //   <main className="l-main">
-    //     <Landing />
-    //   </main>
-
-    // </div>
   );
 }
 

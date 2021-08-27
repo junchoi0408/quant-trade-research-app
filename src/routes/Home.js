@@ -1,3 +1,4 @@
+  
 import React from 'react';
 import financeData from '../img/undraw_financial_data_es63.png';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,7 @@ import './Home.css';
 function Home() {
     return(
         <section className="home">
-            <div className="home__container bd-grid">
+            <div className="home__container">
                 <div className="home__img">
                     <img src={financeData} alt="data log" />
                 </div>
