@@ -10,7 +10,7 @@ function Profile() {
     }
     return (
         <>
-            <button onClick={onLogOutClick}>Log Out</button>
+            <button className="home__container" onClick={onLogOutClick}>Log Out</button>
         </>
     )
 }

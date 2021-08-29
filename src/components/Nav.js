@@ -42,7 +42,7 @@ function Nav({ isLoggedIn }) {
                     <>
                         <ul className="nav__list">
                             <li className="nav__item__signed"><Link to="/" className="nav__link">Home</Link></li>
-                            <li className="nav__item__signed"><Link to="/portfolio" className="nav__link">Porfolio</Link></li>
+                            <li className="nav__item__signed"><Link to="/portfolio" className="nav__link">Portfolio</Link></li>
                             <li className="nav__item__signed"><Link to="/research" className="nav__link">Research</Link></li>
                             <li className="nav__item__signed"><Link to="/profile" className="nav__link">Profile</Link></li>
                         </ul>
