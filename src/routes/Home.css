@@ -99,3 +99,57 @@
 .home__signed__container {
   margin-top: 5em;
 }
+
+.stock__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-right: 1em;
+}
+
+.stock__title__symbol {
+  font-size: 14px; 
+  font-weight: lighter;
+  color: grey;
+}
+
+.container__divider {
+  border-top: 2px solid #000;
+  margin-top: 0.5em;
+}
+
+.financials__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.5em;
+}
+
+.MuiOutlinedInput-input {
+  padding: 6px 17px !important;
+  padding-right: 32px !important;
+}
+
+.financials__data__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: end;
+  /* background-color: #000; */
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.financials__grid__child {
+  width: 114.33px;
+  height: 78px;
+  border-top: 1px solid grey;
+  padding: 4px;
+}
+
+.company__profile__container h2 {
+  margin: 0;
+}
+
+.chart__container {
+  height: 300px;
+  margin-bottom: 5em;
+}

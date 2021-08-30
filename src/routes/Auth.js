@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { authService, firebaseInstance } from "../firebase";
 import { Link } from "react-router-dom";
 import './Auth.css';
