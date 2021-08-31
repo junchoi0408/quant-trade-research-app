@@ -7,6 +7,7 @@ import Slider from '../components/home/HeaderSlider';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import TradingViewWidget, { Themes, RangeTypes } from 'react-tradingview-widget';
+import { Pagination } from '@material-ui/lab';
 
 function Home({ isLoggedIn }) {
     const [dataType, setDataType] = React.useState('Quote');
@@ -86,8 +87,31 @@ function Home({ isLoggedIn }) {
                         </div>
                     </div>
                     <div className="recent__trades__container container__divider">
-                        <span>Recent Trades</span><br/>
-                        <span>Slider</span>
+                        <h2>Recent Trades</h2>
+                        <div className="trades__container">
+                            <div className="trades">
+                                <h3>8/30/21</h3>
+                                <div className="trades__child">     
+                                    <p>ENTRY: $22</p>
+                                    <p>PT: $22</p>
+                                    <p>EXIT: $22</p>
+                                    <p>SL: $22</p>
+                                    <p>Profit: $500(+50%)</p>
+                                </div>
+                            </div>
+                            <div className="trades">
+                                <h3>8/26/21</h3>
+                                <div className="trades__child">     
+                                    <p>ENTRY: $22</p>
+                                    <p>PT: $22</p>
+                                    <p>EXIT: $22</p>
+                                    <p>SL: $22</p>
+                                    <p>Profit: $500(+50%)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <Pagination count={10} shape="rounded"/>
                     </div>
                 </div>      
                 
