@@ -24,7 +24,6 @@ function Home({ isLoggedIn }) {
                     <div className="header__home__container">
                         <span className="stock__title">AMC Entertainment Holdings Inc.</span><br/>
                         <span className="stock__title__symbol">NYSE:AMC</span><br/>
-                        
                     </div>
                     <div className="chart__financials__container container__divider">
                         <div className="chart__container">
@@ -89,12 +88,9 @@ function Home({ isLoggedIn }) {
                             <TradesCard />
                             <TradesCard />
                         </div>
-                        
                         <Pagination count={10} shape="rounded"/>
                     </div>
                 </div>      
-                
-                
             </section>
             :
             <section className="home">

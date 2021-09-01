@@ -28,7 +28,6 @@ function AppRouter({ isLoggedIn }) {
                     <Route exact path="/profile">
                         <Profile />
                     </Route>
-                    <Redirect from="*" to="/" />
                 </> : 
                 <>
                     <Route exact path="/">
@@ -43,7 +42,7 @@ function AppRouter({ isLoggedIn }) {
                     <Route exact path="/auth">
                         <Auth />
                     </Route>
-                    <Redirect from="*" to="/" />
+                    <Redirect from="/auth" to="/" />
                 </>
                 }
             </Switch>

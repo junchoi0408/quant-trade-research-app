@@ -55,6 +55,10 @@
       column-gap: 0;
   }
 
+  .home__signed__container {
+      margin-top: 72px;
+  }
+
   .home__container {
     justify-content: center;
     align-items: center;
@@ -96,14 +100,11 @@
   }
 }
 
-.home__signed__container {
-  margin-top: 5em;
-}
-
 .stock__title {
   font-weight: 600;
   font-size: 24px;
   margin-right: 1em;
+  line-height: 1;
 }
 
 .stock__title__symbol {
