@@ -160,37 +160,3 @@
   justify-content: space-between;
   margin-bottom: 0.5em;
 }
-
-.trades {
-  width: 47.5%;
-  border: 1px solid grey;
-  margin-bottom: 0.5em;
-  border-radius: 6px;
-  box-shadow: 4px 2px 5px #00ff00;
-}
-
-.trades:hover {
-  box-shadow: 6px 4px 5px #00ff00;
-}
-
-.trades__child {
-  padding-right: 0.25em;
-  margin-bottom: 1em;
-}
-
-.trades h3 {
-  margin: 0 0 1em 1em;
-  background-color: #000;
-  color: #fff;
-  width: 45%;
-  text-align: center;
-  font-size: 12px;
-}
-
-.trades span, .trades p {
-  margin-left: 1em;
-}
-
-.trades p {
-  line-height: 100%;
-}

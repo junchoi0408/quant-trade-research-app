@@ -3,11 +3,11 @@ import React from 'react';
 import financeData from '../img/undraw_financial_data_es63.png';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import Slider from '../components/home/HeaderSlider';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import TradingViewWidget, { Themes, RangeTypes } from 'react-tradingview-widget';
 import { Pagination } from '@material-ui/lab';
+import TradesCard from '../components/home/TradesCard';
 
 function Home({ isLoggedIn }) {
     const [dataType, setDataType] = React.useState('Quote');
@@ -24,10 +24,7 @@ function Home({ isLoggedIn }) {
                     <div className="header__home__container">
                         <span className="stock__title">AMC Entertainment Holdings Inc.</span><br/>
                         <span className="stock__title__symbol">NYSE:AMC</span><br/>
-                        {/* <span className="stock__title__symbol">Rating as of Aug 27, 2021</span> */}
-                    </div>
-                    <div className="slider__container">
-                        <Slider />
+                        
                     </div>
                     <div className="chart__financials__container container__divider">
                         <div className="chart__container">
@@ -89,26 +86,8 @@ function Home({ isLoggedIn }) {
                     <div className="recent__trades__container container__divider">
                         <h2>Recent Trades</h2>
                         <div className="trades__container">
-                            <div className="trades">
-                                <h3>8/30/21</h3>
-                                <div className="trades__child">     
-                                    <p>ENTRY: $22</p>
-                                    <p>PT: $22</p>
-                                    <p>EXIT: $22</p>
-                                    <p>SL: $22</p>
-                                    <p>Profit: $500(+50%)</p>
-                                </div>
-                            </div>
-                            <div className="trades">
-                                <h3>8/26/21</h3>
-                                <div className="trades__child">     
-                                    <p>ENTRY: $22</p>
-                                    <p>PT: $22</p>
-                                    <p>EXIT: $22</p>
-                                    <p>SL: $22</p>
-                                    <p>Profit: $500(+50%)</p>
-                                </div>
-                            </div>
+                            <TradesCard />
+                            <TradesCard />
                         </div>
                         
                         <Pagination count={10} shape="rounded"/>
