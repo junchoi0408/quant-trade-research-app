@@ -9,12 +9,14 @@ import TradingViewWidget, { Themes, RangeTypes } from 'react-tradingview-widget'
 import { Pagination } from '@material-ui/lab';
 import TradesCard from '../components/home/TradesCard';
 
-function Home({ isLoggedIn }) {
+function Home({ isLoggedIn, finData, value }) {
     const [dataType, setDataType] = React.useState('Quote');
 
     const handleChange = (event) => {
         setDataType(event.target.value);
     };
+
+    const {data} = finData;
 
     return(
         <>
@@ -88,7 +90,10 @@ function Home({ isLoggedIn }) {
                             <TradesCard />
                             <TradesCard />
                         </div>
-                        <Pagination count={10} shape="rounded"/>
+                        <div className="pagination">
+                            <Pagination count={10} shape="rounded"/>
+                        </div>
+                        
                     </div>
                 </div>      
             </section>

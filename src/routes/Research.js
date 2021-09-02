@@ -7,7 +7,7 @@ import TradesCard from "../components/home/TradesCard";
 import stockChart from '../img/stockExample.PNG';
 import './Research.css';
 
-function Research() {
+function Research({ finData }) {
     
     const labels = {
         0.5: 'Very Risky',

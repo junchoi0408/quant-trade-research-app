@@ -72,6 +72,34 @@
   .home__img img {
     width: 375px;
   }
+
+  .chart__financials__container {
+    display: flex;
+
+  }
+
+  .chart__container {
+    flex-grow: 1;
+    padding: 0 0.5em;
+  }
+
+  .financials__container {
+    flex-grow: 1;
+    align-self: center;
+    padding: 0 0.5em;
+  }
+
+  .trades__container {
+    flex-direction: column;
+  }
+  
+  .recent__trades__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .pagination {
+     align-self: center;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -98,6 +126,7 @@
   .home__img img {
     width: 604px;
   }
+  
 }
 
 .stock__title {
@@ -140,7 +169,7 @@
 }
 
 .financials__grid__child {
-  width: 114.33px;
+  width: 100%;
   height: 78px;
   border-top: 1px solid grey;
   padding: 4px;
@@ -158,6 +187,7 @@
 .trades__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 0.5em;
+  flex-wrap: wrap;
 }

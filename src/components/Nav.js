@@ -8,11 +8,12 @@ import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
 import './Nav.css';
 
-function Nav({ isLoggedIn }) {
+function Nav({ isLoggedIn, onSearchChange }) {
     const useStyles = makeStyles((theme) => ({
         search: {
           position: 'relative',
           borderRadius: '24px',
+          border: '1px solid #000',
           backgroundColor: alpha(theme.palette.common.white, 0.15),
           '&:hover': {
             backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -73,12 +74,13 @@ function Nav({ isLoggedIn }) {
                 <div>
                     <a href="#" className="nav__logo">QTrade</a>
                 </div>
-                <div className={classes.search+' nav__input'}>
+                <div className={isLoggedIn ? classes.search : classes.search + ' nav__input'}>
                     <div className={classes.searchIcon}>
                         <SearchIcon />
                     </div>
                     <InputBase
                         placeholder="Search Quotes"
+                        onChange={onSearchChange}
                         classes={{
                             root: classes.inputRoot,
                             input: classes.inputInput,
