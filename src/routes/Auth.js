@@ -63,8 +63,8 @@ function Auth() {
     return (
         <div className="auth__container">
             <div className="login__logo__container">
-                        <Link to="/" className="nav__logo nav__logo__auth">QTrade</Link>
-                        <span>Log into QTrade</span>
+                <Link to="/" className="nav__logo nav__logo__auth">QTrade</Link>
+                <span>Log into QTrade</span>
             </div>
             <div className="login__container">
                 <form onSubmit={onSubmit} className="form__container">

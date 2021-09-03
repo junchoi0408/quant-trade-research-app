@@ -8,8 +8,9 @@ import Portfolio from "../routes/Portfolio";
 import Research from "../routes/Research";
 import Blog from "../routes/Blog";
 import About from "../routes/About";
+import HomePg from "../routes/HomePg";
 
-function AppRouter({ isLoggedIn, onSearchChange, finData, search }) {
+function AppRouter({ isLoggedIn, onSearchChange, finData }) {
     return (
         <Router >
             <Nav onSearchChange={onSearchChange} isLoggedIn={isLoggedIn}/>
@@ -17,13 +18,13 @@ function AppRouter({ isLoggedIn, onSearchChange, finData, search }) {
                 {isLoggedIn ? 
                 <>
                     <Route exact path="/">
-                        <Home isLoggedIn={isLoggedIn} finData={finData} search={search}/>
+                        <Home isLoggedIn={isLoggedIn} finData={finData}/>
                     </Route>
                     <Route exact path="/portfolio">
                         <Portfolio />
                     </Route>
                     <Route exact path="/research">
-                        <Research finData={finData} search={search}/>
+                        <Research />
                     </Route>
                     <Route exact path="/profile">
                         <Profile />
@@ -32,7 +33,7 @@ function AppRouter({ isLoggedIn, onSearchChange, finData, search }) {
                 </> : 
                 <>
                     <Route exact path="/">
-                        <Home isLoggedIn={isLoggedIn}/>
+                        <HomePg />
                     </Route>
                     <Route exact path="/about">
                         <About />
