@@ -1,7 +1,5 @@
   
-import React from 'react';
-
-
+import React, { useState } from 'react';
 import './Home.css';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
@@ -11,13 +9,11 @@ import TradesCard from '../components/home/TradesCard';
 import FinancialData from '../components/home/FinancialData';
 
 function Home({ isLoggedIn, finData }) {
-    const [dataType, setDataType] = React.useState('Quote');
+    const [dataType, setDataType] = useState('Quote');
 
     const handleChange = (event) => {
         setDataType(event.target.value);
     };
-
-    console.log(finData);
 
     return(
         <>
@@ -50,11 +46,10 @@ function Home({ isLoggedIn, finData }) {
                                     <MenuItem value="Quote">Quote</MenuItem>
                                     <MenuItem value="Key Ratios">Key Ratios</MenuItem>
                                     <MenuItem value="Dividend">Dividend</MenuItem>
-                                    <MenuItem value="Short Interest">Short Interest</MenuItem>
                                 </TextField>
                         </form>
                             <div className="financials__data__container">
-                                <FinancialData finData={finData}/>
+                                <FinancialData dataType={dataType} finData={finData}/>
                             </div>
                         </div>
                     </div>

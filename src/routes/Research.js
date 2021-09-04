@@ -35,7 +35,8 @@ function Research({ finData }) {
     const classes = useStyles();
 
     return (
-        <div className="research__container bd-grid">
+        <>
+        { finData ? <div className="research__container bd-grid">
             <div className="research__header">
                 <span className="stock__title">AMC Entertainment Holdings Inc. (NYSE: AMC)</span><br/>
                 <span className="stock__title__symbol">August 31, 2021 11:52PM EST</span><br/>
@@ -76,7 +77,12 @@ function Research({ finData }) {
                 </div>
                 <Pagination count={10} shape="rounded"/>
             </div>
+        </div> :
+        <div>
+        Loading...
         </div>
+    }
+    </>
     )
 }
 
